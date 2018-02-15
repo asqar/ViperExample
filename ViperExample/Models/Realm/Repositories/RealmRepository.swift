@@ -9,9 +9,9 @@ import RealmSwift
 
 class RealmRepository: Object {
   
-  dynamic var id = 0
-  dynamic var name = ""
-  dynamic var lang = ""
+  @objc dynamic var id = 0
+  @objc dynamic var name = ""
+  @objc dynamic var lang = ""
   
   
   override class func primaryKey() -> String? {

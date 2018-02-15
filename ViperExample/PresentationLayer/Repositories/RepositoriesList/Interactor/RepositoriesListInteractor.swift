@@ -16,8 +16,8 @@ class RepositoriesListInteractor {
   
   fileprivate var topSwiftRepositories: Results<RealmRepository>? {
     didSet {
-      notificationToken?.stop()
-      notificationToken = topSwiftRepositories?.addNotificationBlock {
+      notificationToken?.invalidate()
+      notificationToken = topSwiftRepositories?.observe {
         [weak self] (changes: RealmCollectionChange) in
         
         guard let `self` = self, let repositories = self.topSwiftRepositories else {
@@ -32,7 +32,7 @@ class RepositoriesListInteractor {
   
   
   deinit {
-    notificationToken?.stop()
+    notificationToken?.invalidate()
   }
   
 }

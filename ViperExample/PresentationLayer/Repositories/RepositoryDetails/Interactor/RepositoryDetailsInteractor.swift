@@ -13,8 +13,8 @@ class RepositoryDetailsInteractor {
   
   fileprivate var filteredRepositories: Results<RealmRepository>? {
     didSet {
-      notificationToken?.stop()
-      notificationToken = filteredRepositories?.addNotificationBlock {
+      notificationToken?.invalidate()
+      notificationToken = filteredRepositories?.observe {
         [weak self] (changes: RealmCollectionChange) in
         
         guard let `self` = self, let repository = self.filteredRepositories?.first else {
@@ -29,7 +29,7 @@ class RepositoryDetailsInteractor {
   
   
   deinit {
-    notificationToken?.stop()
+    notificationToken?.invalidate()
   }
 
 }

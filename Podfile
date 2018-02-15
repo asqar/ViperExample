@@ -3,15 +3,18 @@ use_frameworks!
 inhibit_all_warnings!
 
 
+pod 'Realm'
+pod 'RealmSwift'  
+
 target 'ViperExample' do
 
   # Networking
   pod 'Alamofire', '~> 4.0'
   pod 'AlamofireNetworkActivityIndicator', '~> 2.0'
-  pod 'ObjectMapper', '~> 2.2'
+  pod 'ObjectMapper'
 
   # UI Helpers
-  pod 'TableKit', :git => 'https://github.com/noxt/TableKit'
+  pod 'TableKit'
   
   # Database
   pod 'Realm'
@@ -23,7 +26,10 @@ end
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
-      config.build_settings['SWIFT_VERSION'] = '3.0'
+      
+      config.build_settings['SWIFT_VERSION'] = '4.0'
+      config.build_settings['SWIFT_OPTIMIZATION_LEVEL'] = '-Owholemodule'
+
     end
   end
 end

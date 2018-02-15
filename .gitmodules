@@ -1,0 +1,3 @@
+[submodule "swifty_viper"]
+	path = Templates/swifty_viper
+	url = https://github.com/noxt/generamba-templates

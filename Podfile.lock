@@ -1,40 +1,31 @@
 PODS:
-  - Alamofire (4.1.0)
-  - AlamofireNetworkActivityIndicator (2.0.1):
-    - Alamofire (~> 4.0)
-  - ObjectMapper (2.2.1)
-  - Realm (2.0.4):
-    - Realm/Headers (= 2.0.4)
-  - Realm/Headers (2.0.4)
-  - RealmSwift (2.0.4):
-    - Realm (= 2.0.4)
-  - TableKit (2.0.0)
+  - Alamofire (4.6.0)
+  - AlamofireNetworkActivityIndicator (2.2.0):
+    - Alamofire (~> 4.5)
+  - ObjectMapper (3.1.0)
+  - Realm (3.1.1):
+    - Realm/Headers (= 3.1.1)
+  - Realm/Headers (3.1.1)
+  - RealmSwift (3.1.1):
+    - Realm (= 3.1.1)
+  - TableKit (2.5.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
   - AlamofireNetworkActivityIndicator (~> 2.0)
-  - ObjectMapper (~> 2.2)
+  - ObjectMapper
   - Realm
   - RealmSwift
-  - TableKit (from `https://github.com/noxt/TableKit`)
-
-EXTERNAL SOURCES:
-  TableKit:
-    :git: https://github.com/noxt/TableKit
-
-CHECKOUT OPTIONS:
-  TableKit:
-    :commit: 479b0ecfa5f44fd3be2603aaa5c2a2f8c1576410
-    :git: https://github.com/noxt/TableKit
+  - TableKit
 
 SPEC CHECKSUMS:
-  Alamofire: e266cf991b933498df791e645e0d8ac294492153
-  AlamofireNetworkActivityIndicator: 3e55069ada3e1ff7703665156429eedcdfea0bc1
-  ObjectMapper: 41e43e1a89f8060ef5ea5d04ba852e269a621d68
-  Realm: 9da97f48365f8b99dd95c28d45ad8222d62e1775
-  RealmSwift: 01e8db006035f16003e6307ae8eae1adccce68db
-  TableKit: a432c4a24ef59853963e95eaf763313a8e1f3a53
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  AlamofireNetworkActivityIndicator: 81e1630e7cfed22a4e4e82a174c59e651dc4f8ca
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  Realm: 42d1c38a5b1bbcc828b48a7ce702cb86fc68adf4
+  RealmSwift: d31937ca6a6ee54acde64ec839523c0a3c04924b
+  TableKit: 42d4dff2944f273cdeec2ef6352064eb6a9a355b
 
-PODFILE CHECKSUM: 6595436d30f066e5254b43be08e217141e93b306
+PODFILE CHECKSUM: 1e0351d37e5ed67c8ccce240d9616cc544503d6d
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.4.0.beta.2
