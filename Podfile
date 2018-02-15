@@ -4,7 +4,8 @@ inhibit_all_warnings!
 
 
 pod 'Realm'
-pod 'RealmSwift'  
+pod 'RealmSwift'
+pod 'Swinject', '~> 2.0.0'
 
 target 'ViperExample' do
 
@@ -19,13 +20,11 @@ target 'ViperExample' do
   # Database
   pod 'Realm'
   pod 'RealmSwift'
-
-  pod 'Swinject', '~> 2.0.0'
   
 end
 
 target 'ViperExampleTests' do
-  pod 'Swinject', '~> 2.0.0'
+
 end
 
 
