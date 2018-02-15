@@ -1,6 +1,6 @@
 //
-//  Created by Dmitry Ivanenko on 17/11/2016.
-//  Copyright © 2016 Dmitry Ivanenko. All rights reserved.
+//  Created by Askar Bakirov on 17/11/2016.
+//  Copyright © 2018 Askar Bakirov. All rights reserved.
 //
 
 import Foundation
