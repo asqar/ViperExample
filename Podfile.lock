@@ -8,6 +8,7 @@ PODS:
   - Realm/Headers (3.1.1)
   - RealmSwift (3.1.1):
     - Realm (= 3.1.1)
+  - Swinject (2.0.0)
   - TableKit (2.5.0)
 
 DEPENDENCIES:
@@ -16,6 +17,7 @@ DEPENDENCIES:
   - ObjectMapper
   - Realm
   - RealmSwift
+  - Swinject (~> 2.0.0)
   - TableKit
 
 SPEC CHECKSUMS:
@@ -24,8 +26,9 @@ SPEC CHECKSUMS:
   ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
   Realm: 42d1c38a5b1bbcc828b48a7ce702cb86fc68adf4
   RealmSwift: d31937ca6a6ee54acde64ec839523c0a3c04924b
+  Swinject: 2e964a80d70ab09b3949c99032711f89147bfd60
   TableKit: 42d4dff2944f273cdeec2ef6352064eb6a9a355b
 
-PODFILE CHECKSUM: 1e0351d37e5ed67c8ccce240d9616cc544503d6d
+PODFILE CHECKSUM: 44eb9a4707e86f60c060ed0c53221c65239ceb3b
 
 COCOAPODS: 1.4.0.beta.2

@@ -13,6 +13,10 @@ To generate new module (i.e, NewFeature) please run:
 ```shell
 generamba gen NewFeature swifty_viper --project_targets 'ViperExample,ViperExampleTests'
 ```
+or
+```shell
+generamba gen NewFeature swifty_viper_ngh --project_targets 'ViperExample,ViperExampleTests'
+```
 
 Project definitely works with `pod --version` `1.4.0.beta.2` and library versions:
 ```shell
@@ -22,4 +26,5 @@ ObjectMapper (3.1.0)
 Realm (3.1.1)
 RealmSwift (3.1.1)
 TableKit (2.5.0)
+Swinject (2.0.0)
 ```
