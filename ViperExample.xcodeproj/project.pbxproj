@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13C428732035D5400036677C /* ViperExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C428722035D5400036677C /* ViperExampleTests.swift */; };
 		198E25061DDE3F7A00BB6353 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E249B1DDE3F7A00BB6353 /* AppDelegate.swift */; };
 		198E25071DDE3F7A00BB6353 /* ApplicationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E249D1DDE3F7A00BB6353 /* ApplicationConfigurator.swift */; };
 		198E25081DDE3F7A00BB6353 /* ConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198E249E1DDE3F7A00BB6353 /* ConfiguratorProtocol.swift */; };
@@ -69,7 +70,20 @@
 		3685C71EC699A1554C33A1D7 /* Pods_ViperExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8AF4BBCB2A80D4067C7948 /* Pods_ViperExample.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		13C428752035D5400036677C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 198E247C1DDE3E9200BB6353 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 198E24831DDE3E9200BB6353;
+			remoteInfo = ViperExample;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		13C428702035D5400036677C /* ViperExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13C428722035D5400036677C /* ViperExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperExampleTests.swift; sourceTree = "<group>"; };
+		13C428742035D5400036677C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18B776A68530CA2010FBE030 /* Pods-ViperExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperExample/Pods-ViperExample.release.xcconfig"; sourceTree = "<group>"; };
 		198E24841DDE3E9200BB6353 /* ViperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		198E249B1DDE3F7A00BB6353 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +151,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		13C4286D2035D5400036677C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		198E24811DDE3E9200BB6353 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,9 +169,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13C428712035D5400036677C /* ViperExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				13C428722035D5400036677C /* ViperExampleTests.swift */,
+				13C428742035D5400036677C /* Info.plist */,
+			);
+			path = ViperExampleTests;
+			sourceTree = "<group>";
+		};
 		198E247B1DDE3E9200BB6353 = {
 			isa = PBXGroup;
 			children = (
+				13C428712035D5400036677C /* ViperExampleTests */,
 				198E24851DDE3E9200BB6353 /* Products */,
 				198E24991DDE3F7A00BB6353 /* ViperExample */,
 				2B7F34EF74E2764F4C0974F0 /* Pods */,
@@ -162,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				198E24841DDE3E9200BB6353 /* ViperExample.app */,
+				13C428702035D5400036677C /* ViperExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -629,6 +661,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		13C4286F2035D5400036677C /* ViperExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13C428792035D5400036677C /* Build configuration list for PBXNativeTarget "ViperExampleTests" */;
+			buildPhases = (
+				13C4286C2035D5400036677C /* Sources */,
+				13C4286D2035D5400036677C /* Frameworks */,
+				13C4286E2035D5400036677C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13C428762035D5400036677C /* PBXTargetDependency */,
+			);
+			name = ViperExampleTests;
+			productName = ViperExampleTests;
+			productReference = 13C428702035D5400036677C /* ViperExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		198E24831DDE3E9200BB6353 /* ViperExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 198E24961DDE3E9200BB6353 /* Build configuration list for PBXNativeTarget "ViperExample" */;
@@ -655,10 +705,16 @@
 		198E247C1DDE3E9200BB6353 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = "Dmitry Ivanenko";
+				ORGANIZATIONNAME = "Askar Bakirov";
 				TargetAttributes = {
+					13C4286F2035D5400036677C = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = LAU6Z76Q9H;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 198E24831DDE3E9200BB6353;
+					};
 					198E24831DDE3E9200BB6353 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = LAU6Z76Q9H;
@@ -681,11 +737,19 @@
 			projectRoot = "";
 			targets = (
 				198E24831DDE3E9200BB6353 /* ViperExample */,
+				13C4286F2035D5400036677C /* ViperExampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		13C4286E2035D5400036677C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		198E24821DDE3E9200BB6353 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -765,6 +829,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		13C4286C2035D5400036677C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13C428732035D5400036677C /* ViperExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		198E24801DDE3E9200BB6353 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -828,6 +900,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		13C428762035D5400036677C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 198E24831DDE3E9200BB6353 /* ViperExample */;
+			targetProxy = 13C428752035D5400036677C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		198E25031DDE3F7A00BB6353 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -841,6 +921,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		13C428772035D5400036677C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LAU6Z76Q9H;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ViperExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kz.bakirov.ViperExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViperExample.app/ViperExample";
+			};
+			name = Debug;
+		};
+		13C428782035D5400036677C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LAU6Z76Q9H;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ViperExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kz.bakirov.ViperExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViperExample.app/ViperExample";
+			};
+			name = Release;
+		};
 		198E24941DDE3E9200BB6353 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -955,7 +1079,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/ViperExample/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Noxt.ViperExample;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.bakirov.ViperExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -970,7 +1094,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/ViperExample/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Noxt.ViperExample;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.bakirov.ViperExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -979,6 +1103,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		13C428792035D5400036677C /* Build configuration list for PBXNativeTarget "ViperExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13C428772035D5400036677C /* Debug */,
+				13C428782035D5400036677C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		198E247F1DDE3E9200BB6353 /* Build configuration list for PBXProject "ViperExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
